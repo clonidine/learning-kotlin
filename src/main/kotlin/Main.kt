@@ -1,9 +1,7 @@
 fun main() {
-    val name = "Maria" // IMMUTABILITY
-    var n = "Mario" // MUTABILITY
-    
-    n = "Chris"
+    val numbers = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
-    println("Name: $name")
-    println("n: $n")
+    numbers.forEach {
+        println("Element: $it")
+    }
 }
