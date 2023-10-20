@@ -1,7 +1,9 @@
-fun main() {
-    val n = setOf("cherry", "cherry", "cherry")
+fun getName(name: String): String {
+    return "Hello, $name"
+}
 
-    n.forEach {
-        println(it)
-    }
+fun main() {
+    val result = getName("Maria")
+
+    println("Name: $result")
 }
