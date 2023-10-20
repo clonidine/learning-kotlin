@@ -1,11 +1,24 @@
-class Person(val name: String, val age: Int) {
-    fun canAccess(): Boolean {
-        return this.age >= 18
+interface Animal {
+    fun sound(): String
+}
+
+class Dog : Animal {
+    override fun sound(): String {
+        return "Au, au!"
     }
 }
 
-fun main() {
-    val person = Person("Maria", 12)
+class Cat : Animal {
+    override fun sound(): String {
+       return "Meow, meow, meow!"
+    }
+}
 
-    println("Name: ${person.name}, Age: ${person.age}, Can access: ${person.canAccess()}")
+fun makeSound(animal: Animal) {
+    println("Sound: ${animal.sound()}")
+}
+
+fun main() {
+    makeSound(Cat())
+    makeSound(Dog())
 }
