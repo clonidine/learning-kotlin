@@ -1,9 +1,7 @@
-fun getName(name: String): String {
-    return "Hello, $name"
-}
+class Person(val name: String, val age: Int)
 
 fun main() {
-    val result = getName("Maria")
+    val person = Person("Maria", 12)
 
-    println("Name: $result")
+    println("Name: ${person.name}, Age: ${person.age}")
 }
