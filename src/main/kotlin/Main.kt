@@ -1,4 +1,9 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+    val name = "Maria" // IMMUTABILITY
+    var n = "Mario" // MUTABILITY
+    
+    n = "Chris"
+
+    println("Name: $name")
+    println("n: $n")
 }
